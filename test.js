@@ -50,7 +50,7 @@ $('#refresh').on('click', function () {
 
 $('#reload').on('click', function () {
 
-	$('#iframe')[0].contentWindow.location.reload(true);
+	$('#iframe')[0].contentWindow.location = 'frame.html' + '?rnd=' + Math.floor(Math.random()*100)+1;
 
 	$('#log').append('<p><b>reload ad iframe</b></p>');
 	console.log('reload ad iframe');
